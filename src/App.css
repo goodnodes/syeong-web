@@ -1,0 +1,26 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Toss Design System 전역 스타일 보조 */
+.safe-area {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* 반응형 대응 */
+@media (min-width: 768px) {
+  .App {
+    max-width: 480px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
